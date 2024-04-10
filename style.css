@@ -1,0 +1,44 @@
+* {
+    background-color:#7CB9E8;
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;  
+}
+
+.main-logo {
+    width: 150px;
+}
+
+.text-header {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.img-content {
+    width: 30%;
+    border: 8px solid white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .img-content {
+        width: 80%;
+    }
+    .main-logo {
+        width: 100px;
+    }
+}
