@@ -34,7 +34,7 @@
 .img-content {
     width: 350px;
     height: 200px;
-    border: 8px solid white;
+    border: 8px solid #D2A109;
     border-radius: 10px;
 
     
@@ -80,4 +80,5 @@
  .main-logo {
         width: 150px;
     }
+    
 }
