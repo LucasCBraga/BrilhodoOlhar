@@ -36,6 +36,38 @@ header p {
     animation: fadeInUp 1s ease-in-out;
 }
 
+/* Estilos para o botão de compra */
+.btn-comprar {
+    background-color: #ff6b6b; /* Cor de fundo chamativa */
+    color: white; /* Cor do texto */
+    border: none; /* Remover bordas */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    margin-top: 15px; /* Espaçamento superior */
+}
+
+.btn-comprar:hover {
+    background-color: #ff4b4b; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+}
+
+.btn-comprar:active {
+    background-color: #e64444; /* Cor de fundo ao clicar */
+    transform: scale(0.98); /* Leve redução de tamanho ao clicar */
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 section {
     padding: 20px;
     margin: 20px auto;
@@ -77,7 +109,7 @@ ul li {
 }
 
 #cta button:hover {
-    background-color: #d1a88d; /* Alteração de cor ao passar o mouse */
+    background-color: #ed650a; /* Alteração de cor ao passar o mouse */
     border-color: #D2A109; /* Mantém a cor da borda ao passar o mouse */
 }
 
