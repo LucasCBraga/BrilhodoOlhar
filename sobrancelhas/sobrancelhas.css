@@ -36,9 +36,18 @@ header p {
     animation: fadeInUp 1s ease-in-out;
 }
 
+.video-vsl-container {
+    margin: 20px 0;
+}
+
+.video-vsl {
+    width: 800px;
+    height: 600px;
+}
+
 /* Estilos para o botão de compra */
 .btn-comprar {
-    background-color: #ff6b6b; /* Cor de fundo chamativa */
+    background-color: rgb(15, 197, 15); /* Cor de fundo chamativa */
     color: white; /* Cor do texto */
     border: none; /* Remover bordas */
     padding: 15px 30px; /* Espaçamento interno */
@@ -52,12 +61,12 @@ header p {
 }
 
 .btn-comprar:hover {
-    background-color: #ff4b4b; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.05); /* Leve aumento de tamanho ao passar o mouse */
+    background-color: rgb(15, 197, 15); /* Cor de fundo ao passar o mouse */
+    transform: scale(1.15); /* Leve aumento de tamanho ao passar o mouse */
 }
 
 .btn-comprar:active {
-    background-color: #e64444; /* Cor de fundo ao clicar */
+    background-color: rgb(15, 197, 15); /* Cor de fundo ao clicar */
     transform: scale(0.98); /* Leve redução de tamanho ao clicar */
 }
 
@@ -96,7 +105,7 @@ ul li {
 }
 
 #cta button {
-    background-color: #e3bc9a;
+    background-color: rgb(15, 197, 15);
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -109,7 +118,7 @@ ul li {
 }
 
 #cta button:hover {
-    background-color: #ed650a; /* Alteração de cor ao passar o mouse */
+    background-color: rgb(15, 197, 15); /* Alteração de cor ao passar o mouse */
     border-color: #D2A109; /* Mantém a cor da borda ao passar o mouse */
 }
 
@@ -154,8 +163,7 @@ ul li {
     border-radius: 5px;
 }
 
-
-
+/* Responsividade */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
@@ -176,6 +184,11 @@ ul li {
     }
 
     .video-container iframe {
+        height: 200px;
+    }
+
+    .video-vsl{
+        width: 350px;
         height: 200px;
     }
 }
