@@ -59,7 +59,7 @@ header p {
     color: white; /* Cor do texto */
     border: none; /* Remover bordas */
     padding: 15px 30px; /* Espaçamento interno */
-    font-size: 22px; /* Tamanho da fonte */
+    font-size: 18px; /* Tamanho da fonte */
     font-weight: bold; /* Negrito */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor de mãozinha */
