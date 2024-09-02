@@ -54,34 +54,109 @@ header p {
     border: none;
 }
 /* Estilos para o botão de compra */
+.btn-container {
+    padding-bottom: 20px;
+}
+
 .btn-comprar {
-    background-color: rgb(15, 197, 15); /* Cor de fundo chamativa */
-    color: white; /* Cor do texto */
-    border: none; /* Remover bordas */
-    padding: 15px 30px; /* Espaçamento interno */
-    font-size: 18px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de mãozinha */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
-    margin-top: 15px; /* Espaçamento superior */
+    background-color: #ff4c4c; /* Cor de fundo mais chamativa */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+    margin-top: 15px;
 }
 
 .btn-comprar:hover {
-    background-color: rgb(15, 197, 15); /* Cor de fundo ao passar o mouse */
-    transform: scale(1.15); /* Leve aumento de tamanho ao passar o mouse */
+    background-color: #ff9800; /* Cor de fundo mais vibrante ao passar o mouse */
+    transform: scale(1.1); /* Aumento mais perceptível */
 }
 
 .btn-comprar:active {
-    background-color: rgb(15, 197, 15); /* Cor de fundo ao clicar */
-    transform: scale(0.98); /* Leve redução de tamanho ao clicar */
+    background-color: #e64a19; /* Cor ao clicar */
+    transform: scale(0.98);
 }
 
-.btn-container {
+.contador-texto {
+    font-size: 18px;
+    color: yellow;
+}
+
+#countdown {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    justify-content: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Adiciona margem para espaçamento */
+}
+
+.time-unit {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #fcfcfc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.7em; /* Aumenta o tamanho da fonte */
+    color: red;
+}
+
+#minutes {
+    font-size: 32px;
+}
+
+#seconds {
+    font-size: 32px;
+}
+
+.time-unit span {
+    display: block;
+    margin-bottom: 5px; /* Espaçamento entre o número e o rótulo */
+}
+
+.label {
+    font-size: 0.8em;
+    color: #777;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
+
+/* Estilo para quando a contagem regressiva está próxima do fim */
+#countdown.near-expiry .time-unit {
+    border-color: #ff4c4c; /* Cor da borda quando perto do fim */
+    color: #ff4c4c; /* Cor do texto quando perto do fim */
+}
+
+/* Estilos para quando a contagem regressiva termina */
+#countdown.expired {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4c4c; /* Cor para "Oferta Expirada" */
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* Estilo para quando a contagem regressiva está próxima do fim */
+#countdown.near-expiry .time-unit {
+    border-color: #ff4c4c; /* Cor da borda quando perto do fim */
+    color: #ff4c4c; /* Cor do texto quando perto do fim */
+}
+
+/* Estilos para quando a contagem regressiva termina */
+#countdown.expired {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4c4c; /* Cor para "Oferta Expirada" */
+    text-align: center;
+    margin: 20px 0;
 }
 
 
