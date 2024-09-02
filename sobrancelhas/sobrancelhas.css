@@ -53,6 +53,17 @@ header p {
     height: 100%;
     border: none;
 }
+
+.texto-preco {
+    font-size: 22px;
+    color: rgb(252, 1, 1);
+}
+
+.texto-preco2 {
+    font-size: 18px;
+    color: rgb(252, 1, 1);
+}
+
 /* Estilos para o botão de compra */
 .btn-container {
     padding-bottom: 20px;
